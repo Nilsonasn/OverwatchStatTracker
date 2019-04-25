@@ -1,0 +1,15 @@
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\OverwatchGameStats.exe.config
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\OverwatchGameStats.exe
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\OverwatchGameStats.pdb
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csprojAssemblyReference.cache
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\MainWindow.g.cs
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\App.g.cs
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats_MarkupCompile.cache
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats_MarkupCompile.lref
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\MainWindow.baml
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.g.resources
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.Properties.Resources.resources
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csproj.GenerateResource.cache
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csproj.CoreCompileInputs.cache
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.exe
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.pdb
