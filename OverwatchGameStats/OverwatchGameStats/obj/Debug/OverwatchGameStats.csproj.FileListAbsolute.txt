@@ -13,3 +13,15 @@ C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\Over
 C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csproj.CoreCompileInputs.cache
 C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.exe
 C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.pdb
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.dll
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.Platform.Core.dll
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.Platform.dll
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.xml
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.Platform.xml
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.Platform.Core.xml
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\Views\MainView.g.cs
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\App.baml
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\Views\MainView.baml
+C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csproj.CopyComplete
