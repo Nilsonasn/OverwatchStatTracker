@@ -12,6 +12,7 @@ namespace OverwatchGameStats.ViewModels
     {
         private BindableCollection<Map> maps;
         private Map _seletedMapType;
+        private SingleGameData gamedata;
 
         public MainViewModel()
         {
@@ -20,6 +21,7 @@ namespace OverwatchGameStats.ViewModels
             maps.Add(new Map(MapType.Control));
             maps.Add(new Map(MapType.Escort));
             maps.Add(new Map(MapType.Hybrid));
+            gamedata = new SingleGameData();
         }
 
         public BindableCollection<Map> MapList
@@ -33,5 +35,7 @@ namespace OverwatchGameStats.ViewModels
                 NotifyOfPropertyChange(() => SelectedMap);
             }
         }
+        public SingleGameData GameData{ get { return gamedata; } }
+
     }
 }

@@ -35,12 +35,18 @@
                     <StackPanel HorizontalAlignment="Left"
                                 VerticalAlignment="Top"
                                 Grid.Column="0">
-                        <CheckBox Margin="5">Reinhardt</CheckBox>
-                        <CheckBox Margin="5">Orisa</CheckBox>
-                        <CheckBox Margin="5">Winston</CheckBox>
-                        <CheckBox Margin="5">Roadhog</CheckBox>
-                        <CheckBox Margin="5">Zarya</CheckBox>
-                        <CheckBox Margin="5">Wrecking Ball</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Reinhardt_IsChosen">Reinhardt</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Orisa_IsChosen">Orisa</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Winston_IsChosen">Winston</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Roadhog_IsChosen">Roadhog</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Zarya_IsChosen">Zarya</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Wreckingball_IsChosen">Wrecking Ball</CheckBox>
 
                     </StackPanel>
                 </Grid>

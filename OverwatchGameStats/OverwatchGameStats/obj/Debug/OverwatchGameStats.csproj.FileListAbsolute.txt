@@ -25,3 +25,28 @@ C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\Gene
 C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\App.baml
 C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\Views\MainView.baml
 C:\Users\mrand\source\repos\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csproj.CopyComplete
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csprojAssemblyReference.cache
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\Views\MainView.g.cs
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\App.g.cs
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats_MarkupCompile.cache
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats_MarkupCompile.lref
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.exe
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.pdb
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\OverwatchGameStats.exe.config
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\OverwatchGameStats.exe
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\OverwatchGameStats.pdb
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.dll
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.Platform.Core.dll
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.Platform.dll
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.xml
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.Platform.xml
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\bin\Debug\Caliburn.Micro.Platform.Core.xml
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\App.baml
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\Views\MainView.baml
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.g.resources
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.Properties.Resources.resources
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csproj.GenerateResource.cache
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csproj.CoreCompileInputs.cache
+C:\Users\mrand\Documents\KILL ME\OverwatchStatTracker\OverwatchGameStats\OverwatchGameStats\obj\Debug\OverwatchGameStats.csproj.CopyComplete
