@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OverwatchGameStats.Views"
         mc:Ignorable="d"
-        Title="MainView" Height="520" Width="800">
+        Title="MainView"
+        Height="520"
+        Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20" />
-            <ColumnDefinition Width="743*" />
-            <ColumnDefinition Width="20*" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="784*" />
+            <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="5" />
@@ -61,27 +63,43 @@
                         <StackPanel HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
                                     Grid.Column="0">
-                            <CheckBox Margin="5">Ashe</CheckBox>
-                            <CheckBox Margin="5">Bastion</CheckBox>
-                            <CheckBox Margin="5">Doomfist</CheckBox>
-                            <CheckBox Margin="5">Genji</CheckBox>
-                            <CheckBox Margin="5">Hanzo</CheckBox>
-                            <CheckBox Margin="5">Junkrat</CheckBox>
-                            <CheckBox Margin="5">Mccree</CheckBox>
-                            <CheckBox Margin="5">Mei</CheckBox>
-                            <CheckBox Margin="5">Pharah</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Ashe_IsChosen">Ashe</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Bastion_IsChosen">Bastion</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Doomfist_IsChosen">Doomfist</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Genji_IsChosen">Genji</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Hanzo_IsChosen">Hanzo</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Junkrat_IsChosen">Junkrat</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Mccree_IsChosen">Mccree</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Mei_IsChosen">Mei</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Pharah_IsChosen">Pharah</CheckBox>
 
                         </StackPanel>
                         <StackPanel HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
                                     Grid.Column="1">
-                            <CheckBox Margin="5">Reaper</CheckBox>
-                            <CheckBox Margin="5">Soldier 76</CheckBox>
-                            <CheckBox Margin="5">Sombra</CheckBox>
-                            <CheckBox Margin="5">Symmetra</CheckBox>
-                            <CheckBox Margin="5">Torbjorn</CheckBox>
-                            <CheckBox Margin="5">Tracer</CheckBox>
-                            <CheckBox Margin="5">Widowmaker</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Reaper_IsChosen">Reaper</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Soldier76_IsChosen">Soldier 76</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Sombra_IsChosen">Sombra</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Symmetra_IsChosen">Symmetra</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Torbjorn_IsChosen">Torbjorn</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Tracer_IsChosen">Tracer</CheckBox>
+                            <CheckBox Margin="5"
+                                      x:Name="GameData_AllHeroes_Widowmaker_IsChosen">Widowmaker</CheckBox>
                         </StackPanel>
                     </Grid>
                 </Border>
@@ -94,13 +112,20 @@
                     <StackPanel HorizontalAlignment="Left"
                                 VerticalAlignment="Top"
                                 Grid.Column="0">
-                        <CheckBox Margin="5">Ana</CheckBox>
-                        <CheckBox Margin="5">Baptiste</CheckBox>
-                        <CheckBox Margin="5">Brigitte</CheckBox>
-                        <CheckBox Margin="5">Lucio</CheckBox>
-                        <CheckBox Margin="5">Mercy</CheckBox>
-                        <CheckBox Margin="5">Moira</CheckBox>
-                        <CheckBox Margin="5">Zenyatta</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Ana_IsChosen">Ana</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Baptiste_IsChosen">Baptiste</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Brigitte_IsChosen">Brigitte</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Lucio_IsChosen">Lucio</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Mercy_IsChosen">Mercy</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Moira_IsChosen">Moira</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Zenyatta_IsChosen">Zenyatta</CheckBox>
                     </StackPanel>
                 </Grid>
             </Grid>
@@ -116,13 +141,19 @@
                 <GroupBox Header="Communication"
                           Height="auto">
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton Margin="5">
+                        <RadioButton IsChecked="{Binding GameData.Communication[0]}" Margin="2,5,2,5">
+                            Toxic
+                        </RadioButton>
+                        <RadioButton Margin="2,5,2,5"
+                                     IsChecked="{Binding GameData.Communication[1]}">
                             None
                         </RadioButton>
-                        <RadioButton Margin="5">
+                        <RadioButton Margin="2,5,2,5"
+                                     IsChecked="{Binding GameData.Communication[2]}">
                             Average
                         </RadioButton>
-                        <RadioButton Margin="5">
+                        <RadioButton Margin="2,5,2,5"
+                                     IsChecked="{Binding GameData.Communication[3]}">
                             Good
                         </RadioButton>
                     </StackPanel>
@@ -291,15 +322,13 @@
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
 
-                            <ComboBox
-                                      Margin="3,0,3,0"
+                            <ComboBox Margin="3,0,3,0"
                                       Grid.Column="0"
                                       x:Name="MapList"
                                       DisplayMemberPath="TypeName"
                                       SelectedItem="{Binding Path=SelectedMap, Mode=OneWayToSource}">
                             </ComboBox>
-                            <ComboBox
-                                      Margin="3,0,3,0"
+                            <ComboBox Margin="3,0,3,0"
                                       Grid.Column="1"
                                       x:Name="SelectedMap_Maps">
                             </ComboBox>
