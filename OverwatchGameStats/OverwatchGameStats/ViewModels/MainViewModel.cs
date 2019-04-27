@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OverwatchGameStats.Models;
+using OverwatchGameStats.Views;
 
 namespace OverwatchGameStats.ViewModels
 {
@@ -13,6 +14,7 @@ namespace OverwatchGameStats.ViewModels
         private BindableCollection<Map> maps;
         private Map _seletedMapType;
         private SingleGameData gamedata;
+        private bool usecurrenttime = true;
 
         public MainViewModel()
         {
@@ -35,7 +37,22 @@ namespace OverwatchGameStats.ViewModels
                 NotifyOfPropertyChange(() => SelectedMap);
             }
         }
+
         public SingleGameData GameData{ get { return gamedata; } }
 
+        public bool UseCurrentTime {
+            get { return usecurrenttime; }
+            set { usecurrenttime = value; }
+        }
+
+        public void CurrentTime()
+        {
+            if (UseCurrentTime == true)
+            {
+                GameData.GameDate = DateTime.Now;
+            }
+            
+            NotifyOfPropertyChange(() => GameData.GameDate);
+        }
     }
 }

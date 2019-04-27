@@ -172,12 +172,17 @@
                 <GroupBox Header="Date/Time">
                     <StackPanel>
                         <CheckBox Margin="2,5,2,5"
-                                  IsChecked="True">Current</CheckBox>
-                        <DatePicker Margin="2,5,2,5"></DatePicker>
+                                  IsChecked="{Binding Path=UseCurrentTime}" x:Name="CurrentTime"
+                                  Click="DisablePickers">Current</CheckBox>
+                        <DatePicker x:Name="GameData_GameDate"
+                                    IsEnabled="False"
+                                    DisplayDate="{Binding Path=GameData.GameDate}" SelectedDate="{Binding Path=GameData.GameDate}"  Margin="2,5,2,5"></DatePicker>
                         <StackPanel Orientation="Horizontal"
                                     Margin="2,5,2,5">
-                            <ComboBox Margin="3"
-                                      SelectedIndex="0">
+                            <ComboBox Name="cBoxHr"  Margin="3"
+                                      IsEnabled="False"
+                                      SelectedIndex="{Binding Path=GameData.TimeHr, Mode=TwoWay}">
+                                <ComboBoxItem>00</ComboBoxItem>
                                 <ComboBoxItem>01</ComboBoxItem>
                                 <ComboBoxItem>02</ComboBoxItem>
                                 <ComboBoxItem>03</ComboBoxItem>
@@ -190,10 +195,24 @@
                                 <ComboBoxItem>10</ComboBoxItem>
                                 <ComboBoxItem>11</ComboBoxItem>
                                 <ComboBoxItem>12</ComboBoxItem>
+                                <ComboBoxItem>13</ComboBoxItem>
+                                <ComboBoxItem>14</ComboBoxItem>
+                                <ComboBoxItem>15</ComboBoxItem>
+                                <ComboBoxItem>16</ComboBoxItem>
+                                <ComboBoxItem>17</ComboBoxItem>
+                                <ComboBoxItem>18</ComboBoxItem>
+                                <ComboBoxItem>19</ComboBoxItem>
+                                <ComboBoxItem>20</ComboBoxItem>
+                                <ComboBoxItem>21</ComboBoxItem>
+                                <ComboBoxItem>22</ComboBoxItem>
+                                <ComboBoxItem>23</ComboBoxItem>
                             </ComboBox>
                             <Label>:</Label>
                             <ComboBox Margin="3"
-                                      SelectedIndex="0">
+                                      Name="cBoxMin"
+                                      IsEnabled="False"
+                                      SelectedIndex="{Binding Path=GameData.TimeMin, Mode=TwoWay}">
+                                <ComboBoxItem>00</ComboBoxItem>
                                 <ComboBoxItem>01</ComboBoxItem>
                                 <ComboBoxItem>02</ComboBoxItem>
                                 <ComboBoxItem>03</ComboBoxItem>
@@ -253,12 +272,6 @@
                                 <ComboBoxItem>57</ComboBoxItem>
                                 <ComboBoxItem>58</ComboBoxItem>
                                 <ComboBoxItem>59</ComboBoxItem>
-                                <ComboBoxItem>60</ComboBoxItem>
-                            </ComboBox>
-                            <ComboBox Margin="3"
-                                      SelectedIndex="0">
-                                <ComboBoxItem>AM</ComboBoxItem>
-                                <ComboBoxItem>PM</ComboBoxItem>
                             </ComboBox>
                         </StackPanel>
                     </StackPanel>

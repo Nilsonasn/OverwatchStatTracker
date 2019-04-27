@@ -23,5 +23,22 @@ namespace OverwatchGameStats.Views
         {
             InitializeComponent();
         }
+
+        private void DisablePickers(object sender, RoutedEventArgs e)
+        {
+            CheckBox tempBox = sender as CheckBox;
+            if(CurrentTime.IsChecked == true)
+            {
+                GameData_GameDate.IsEnabled = false;
+                cBoxHr.IsEnabled = false;
+                cBoxMin.IsEnabled = false;
+            }
+            else
+            {
+                GameData_GameDate.IsEnabled = true;
+                cBoxHr.IsEnabled = true;
+                cBoxMin.IsEnabled = true;
+            }
+        }
     }
 }
