@@ -160,11 +160,10 @@
                 </GroupBox>
                 <GroupBox Header="Game Type">
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton Margin="3">
+                        <RadioButton IsChecked="{Binding Path=GameData.GameType[0]}" Margin="3">
                             Quick Play
                         </RadioButton>
-                        <RadioButton Margin="3"
-                                     IsChecked="True">
+                        <RadioButton IsChecked="{Binding Path=GameData.GameType[1]}" Margin="3">
                             Competitive
                         </RadioButton>
                     </StackPanel>
