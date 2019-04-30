@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:OverwatchGameStats.Views"
         mc:Ignorable="d"
         Title="MainView"
-        Height="520"
+        Height="562"
         Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -16,8 +16,8 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="5" />
-            <RowDefinition Height="252*" />
-            <RowDefinition Height="220" />
+            <RowDefinition />
+            <RowDefinition Height="261" />
             <RowDefinition Height="5" />
         </Grid.RowDefinitions>
         <GroupBox Grid.Column="1"
@@ -38,17 +38,20 @@
                                 VerticalAlignment="Top"
                                 Grid.Column="0">
                         <CheckBox Margin="5"
-                                  x:Name="GameData_AllHeroes_Reinhardt_IsChosen">Reinhardt</CheckBox>
+                                  x:Name="GameData_AllHeroes_Dva_IsChosen">Dva</CheckBox>
                         <CheckBox Margin="5"
                                   x:Name="GameData_AllHeroes_Orisa_IsChosen">Orisa</CheckBox>
                         <CheckBox Margin="5"
-                                  x:Name="GameData_AllHeroes_Winston_IsChosen">Winston</CheckBox>
+                                  x:Name="GameData_AllHeroes_Reinhardt_IsChosen">Reinhardt</CheckBox>
                         <CheckBox Margin="5"
                                   x:Name="GameData_AllHeroes_Roadhog_IsChosen">Roadhog</CheckBox>
                         <CheckBox Margin="5"
-                                  x:Name="GameData_AllHeroes_Zarya_IsChosen">Zarya</CheckBox>
-                        <CheckBox Margin="5"
                                   x:Name="GameData_AllHeroes_Wreckingball_IsChosen">Wrecking Ball</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Winston_IsChosen">Winston</CheckBox>
+                        <CheckBox Margin="5"
+                                  x:Name="GameData_AllHeroes_Zarya_IsChosen">Zarya</CheckBox>
+                        
 
                     </StackPanel>
                 </Grid>
@@ -141,7 +144,8 @@
                 <GroupBox Header="Communication"
                           Height="auto">
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton IsChecked="{Binding GameData.Communication[0]}" Margin="2,5,2,5">
+                        <RadioButton IsChecked="{Binding GameData.Communication[0]}"
+                                     Margin="2,5,2,5">
                             Toxic
                         </RadioButton>
                         <RadioButton Margin="2,5,2,5"
@@ -160,10 +164,12 @@
                 </GroupBox>
                 <GroupBox Header="Game Type">
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton IsChecked="{Binding Path=GameData.GameType[0]}" Margin="3">
+                        <RadioButton IsChecked="{Binding Path=GameData.GameType[0]}"
+                                     Margin="3">
                             Quick Play
                         </RadioButton>
-                        <RadioButton IsChecked="{Binding Path=GameData.GameType[1]}" Margin="3">
+                        <RadioButton IsChecked="{Binding Path=GameData.GameType[1]}"
+                                     Margin="3">
                             Competitive
                         </RadioButton>
                     </StackPanel>
@@ -171,14 +177,18 @@
                 <GroupBox Header="Date/Time">
                     <StackPanel>
                         <CheckBox Margin="2,5,2,5"
-                                  IsChecked="{Binding Path=UseCurrentTime}" x:Name="CurrentTime"
+                                  IsChecked="{Binding Path=UseCurrentTime}"
+                                  x:Name="CurrentTime"
                                   Click="DisablePickers">Current</CheckBox>
                         <DatePicker x:Name="GameData_GameDate"
                                     IsEnabled="False"
-                                    DisplayDate="{Binding Path=GameData.GameDate}" SelectedDate="{Binding Path=GameData.GameDate}"  Margin="2,5,2,5"></DatePicker>
+                                    DisplayDate="{Binding Path=GameData.GameDate}"
+                                    SelectedDate="{Binding Path=GameData.GameDate}"
+                                    Margin="2,5,2,5"></DatePicker>
                         <StackPanel Orientation="Horizontal"
                                     Margin="2,5,2,5">
-                            <ComboBox Name="cBoxHr"  Margin="3"
+                            <ComboBox Name="cBoxHr"
+                                      Margin="3"
                                       IsEnabled="False"
                                       SelectedIndex="{Binding Path=GameData.TimeHr, Mode=TwoWay}">
                                 <ComboBoxItem>00</ComboBoxItem>
@@ -282,12 +292,23 @@
                 <StackPanel>
                     <GroupBox Header="Stack Size">
                         <StackPanel Orientation="Horizontal">
-                            <RadioButton Margin="3">0</RadioButton>
-                            <RadioButton Margin="3">1</RadioButton>
-                            <RadioButton Margin="3">2</RadioButton>
-                            <RadioButton Margin="3">3</RadioButton>
-                            <RadioButton Margin="3">4</RadioButton>
-                            <RadioButton Margin="3">5</RadioButton>
+                            <RadioButton Margin="3"
+                                         VerticalContentAlignment="Center"
+                                         IsChecked="{Binding Path=GameData.StackSize[0].IsSelected}">0</RadioButton>
+                            <RadioButton Margin="3"
+                                         VerticalContentAlignment="Center"
+                                         IsChecked="{Binding Path=GameData.StackSize[1].IsSelected}">1</RadioButton>
+                            <RadioButton Margin="3"
+                                         IsChecked="{Binding Path=GameData.StackSize[2].IsSelected}">2</RadioButton>
+                            <RadioButton Margin="3"
+                                         VerticalContentAlignment="Center"
+                                         IsChecked="{Binding Path=GameData.StackSize[3].IsSelected}"
+                                         Content="3"></RadioButton>
+                            <RadioButton Margin="3"
+                                         IsChecked="{Binding Path=GameData.StackSize[4].IsSelected}">4</RadioButton>
+                            <RadioButton Margin="3"
+                                         VerticalContentAlignment="Center"
+                                         IsChecked="{Binding Path=GameData.StackSize[5].IsSelected}">5</RadioButton>
                         </StackPanel>
                     </GroupBox>
                     <GroupBox Header="Team Members">
@@ -302,15 +323,27 @@
                             </Grid.RowDefinitions>
                             <StackPanel Grid.Column="0"
                                         Grid.Row="0">
-                                <CheckBox Margin="5">Trevor</CheckBox>
-                                <CheckBox Margin="5">Spencer</CheckBox>
-                                <CheckBox Margin="5">Bryce</CheckBox>
+                                <CheckBox Content="{Binding Path=GameData.People[0].Name}"
+                                          IsChecked="{Binding Path=GameData.People[0].IsSelected}"
+                                          Margin="5"></CheckBox>
+                                <CheckBox Margin="5"
+                                          Content="{Binding Path=GameData.People[1].Name}"
+                                          IsChecked="{Binding Path=GameData.People[1].IsSelected}"></CheckBox>
+                                <CheckBox Margin="5"
+                                          Content="{Binding Path=GameData.People[2].Name}"
+                                          IsChecked="{Binding Path=GameData.People[2].IsSelected}"></CheckBox>
                             </StackPanel>
                             <StackPanel Grid.Column="1"
                                         Grid.Row="0">
-                                <CheckBox Margin="5">Indiigo</CheckBox>
-                                <CheckBox Margin="5">Kr0nai</CheckBox>
-                                <CheckBox Margin="5">WhiteRice</CheckBox>
+                                <CheckBox Margin="5"
+                                          Content="{Binding Path=GameData.People[3].Name}"
+                                          IsChecked="{Binding Path=GameData.People[3].IsSelected}"></CheckBox>
+                                <CheckBox Margin="5"
+                                          Content="{Binding Path=GameData.People[4].Name}"
+                                          IsChecked="{Binding Path=GameData.People[4].IsSelected}"></CheckBox>
+                                <CheckBox Margin="5"
+                                          Content="{Binding Path=GameData.People[5].Name}"
+                                          IsChecked="{Binding Path=GameData.People[5].IsSelected}"></CheckBox>
                             </StackPanel>
                             <StackPanel Grid.Row="1"
                                         Grid.ColumnSpan="2"
@@ -323,7 +356,8 @@
                                 <TextBox Grid.Row="1"
                                          Grid.ColumnSpan="2"
                                          VerticalContentAlignment="Center"
-                                         Width="270"></TextBox>
+                                         Width="270"
+                                         Text="{Binding Path=GameData.OtherPeople}"></TextBox>
                             </StackPanel>
                         </Grid>
                     </GroupBox>
@@ -338,11 +372,12 @@
                                       Grid.Column="0"
                                       x:Name="MapList"
                                       DisplayMemberPath="TypeName"
-                                      SelectedItem="{Binding Path=SelectedMap, Mode=OneWayToSource}">
+                                      SelectedItem="{Binding Path=SelectedMapType, Mode=OneWayToSource}">
                             </ComboBox>
                             <ComboBox Margin="3,0,3,0"
                                       Grid.Column="1"
-                                      x:Name="SelectedMap_Maps">
+                                      x:Name="SelectedMapType_Maps"
+                                      SelectedItem="{Binding Path=GameData.SelectedMap, Mode=OneWayToSource}">
                             </ComboBox>
                             <!--<ComboBox Grid.Column="2"
                                       Margin="3,0,3,0">
@@ -386,16 +421,16 @@
                 <GroupBox Header="Medals">
                     <StackPanel>
                         <ComboBox Margin="0,3,0,3"
-                                  SelectedIndex="0">
-                            Eliminations
+                                  SelectedIndex="{Binding Path=GameData.MedalsReceived[0].Rank}">
+                            <ComboBoxItem Content="{Binding Path=GameData.MedalsReceived[0].MedalType}"></ComboBoxItem>
                             <ComboBoxItem>None</ComboBoxItem>
                             <ComboBoxItem>Bronze</ComboBoxItem>
                             <ComboBoxItem>Silver</ComboBoxItem>
                             <ComboBoxItem>Gold</ComboBoxItem>
                         </ComboBox>
                         <ComboBox Margin="0,3,0,3"
-                                  SelectedIndex="0">
-                            Objective Kills
+                                  SelectedIndex="{Binding Path=GameData.MedalsReceived[1].Rank}">
+                            <ComboBoxItem Content="{Binding Path=GameData.MedalsReceived[1].MedalType}"></ComboBoxItem>
                             <ComboBoxItem>None</ComboBoxItem>
                             <ComboBoxItem>Bronze</ComboBoxItem>
                             <ComboBoxItem>Silver</ComboBoxItem>
@@ -403,24 +438,24 @@
                         </ComboBox>
 
                         <ComboBox Margin="0,3,0,3"
-                                  SelectedIndex="0">
-                            Objective Time
+                                  SelectedIndex="{Binding Path=GameData.MedalsReceived[2].Rank}">
+                            <ComboBoxItem Content="{Binding Path=GameData.MedalsReceived[2].MedalType}"></ComboBoxItem>
                             <ComboBoxItem>None</ComboBoxItem>
                             <ComboBoxItem>Bronze</ComboBoxItem>
                             <ComboBoxItem>Silver</ComboBoxItem>
                             <ComboBoxItem>Gold</ComboBoxItem>
                         </ComboBox>
                         <ComboBox Margin="0,3,0,3"
-                                  SelectedIndex="0">
-                            Hero Damge Done
+                                  SelectedIndex="{Binding Path=GameData.MedalsReceived[3].Rank}">
+                            <ComboBoxItem Content="{Binding Path=GameData.MedalsReceived[3].MedalType}"></ComboBoxItem>
                             <ComboBoxItem>None</ComboBoxItem>
                             <ComboBoxItem>Bronze</ComboBoxItem>
                             <ComboBoxItem>Silver</ComboBoxItem>
                             <ComboBoxItem>Gold</ComboBoxItem>
                         </ComboBox>
                         <ComboBox Margin="0,3,0,3"
-                                  SelectedIndex="0">
-                            Healing Done
+                                  SelectedIndex="{Binding Path=GameData.MedalsReceived[4].Rank}">
+                            <ComboBoxItem Content="{Binding Path=GameData.MedalsReceived[4].MedalType}"></ComboBoxItem>
                             <ComboBoxItem>None</ComboBoxItem>
                             <ComboBoxItem>Bronze</ComboBoxItem>
                             <ComboBoxItem>Silver</ComboBoxItem>
@@ -428,10 +463,35 @@
                         </ComboBox>
                     </StackPanel>
                 </GroupBox>
+                <GroupBox Header="Outcome">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0"
+                                    Orientation="Horizontal">
+                            <RadioButton VerticalContentAlignment="Center" IsChecked="{Binding Path=GameData.GameOutcome}" Margin="3">Win</RadioButton>
+                            <RadioButton VerticalContentAlignment="Center" Margin="3">Loss</RadioButton>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1"
+                                    HorizontalAlignment="Right"
+                                    Orientation="Horizontal">
+                            <Label HorizontalAlignment="Right">SR:</Label>
+                            <TextBox Width="55"
+                                     HorizontalAlignment="Right"
+                                     VerticalContentAlignment="Center"
+                                     Text="{Binding Path=GameData.SkillRatingStr}"></TextBox>
+                        </StackPanel>
+
+                    </Grid>
+
+                </GroupBox>
                 <Button Grid.Row="1"
                         Grid.Column="2"
                         Height="35"
-                        Margin="10,5,10,5">Submit</Button>
+                        Margin="10,5,10,5"
+                        x:Name="Submit">Submit</Button>
             </StackPanel>
         </Grid>
     </Grid>

@@ -71,6 +71,9 @@
     <Compile Include="Models\GameStats.cs" />
     <Compile Include="Models\Heroes.cs" />
     <Compile Include="Models\MapTypes.cs" />
+    <Compile Include="Models\Medal.cs" />
+    <Compile Include="Models\People.cs" />
+    <Compile Include="Models\SelectorGroup.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>

@@ -8,7 +8,7 @@ namespace OverwatchGameStats.Models
 {
     public class Heroes
     {
-        List<Hero> HeroList;
+        List<Hero> herolist;
         private Hero ana = new Hero("Ana");
         private Hero ashe = new Hero("Ashe");
         private Hero baptiste = new Hero("Baptsite");
@@ -30,6 +30,7 @@ namespace OverwatchGameStats.Models
         private Hero reinhardt = new Hero("Reinhardt");
         private Hero roadhog = new Hero("Roadhog");
         private Hero soldier76 = new Hero("Soldier76");
+        private Hero sombra = new Hero("Sombra");
         private Hero symmetra = new Hero("Symmetra");
         private Hero torbjorn = new Hero("Torbjorn");
         private Hero tracer = new Hero("Tracer");
@@ -60,6 +61,7 @@ namespace OverwatchGameStats.Models
         public Hero Reinhardt { get { return reinhardt; } }
         public Hero Roadhog { get { return roadhog; } }
         public Hero Soldier76 { get { return soldier76; } }
+        public Hero Sombra { get { return sombra; } }
         public Hero Symmetra { get { return symmetra; } }
         public Hero Torbjorn { get { return torbjorn; } }
         public Hero Tracer { get { return tracer; } }
@@ -69,6 +71,11 @@ namespace OverwatchGameStats.Models
         public Hero Zarya { get { return zarya; } }
         public Hero Zenyatta { get { return zenyatta; } }
 
+        public List<Hero> HeroList
+        {
+            get { return herolist; }
+            set { herolist = value; }
+        }
 
 
         public Heroes()
@@ -95,6 +102,7 @@ namespace OverwatchGameStats.Models
             HeroList.Add(reinhardt);
             HeroList.Add(roadhog);
             HeroList.Add(soldier76);
+            HeroList.Add(sombra);
             HeroList.Add(symmetra);
             HeroList.Add(torbjorn);
             HeroList.Add(tracer);
